@@ -1,0 +1,44 @@
+
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.product__rating{
+    display: flex;
+}
+
+.product > img{
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1em;
+    transition: .5s;
+}
+
+/* .product > img:hover{
+    transform: scale(5);
+} */
+
+.product__info{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.product .Button{
+    background-color: rgb(255,216,20);
+    height: 30px;
+}
+
+.product .Button:hover{
+    background-color: rgb(236, 200, 20);
+}

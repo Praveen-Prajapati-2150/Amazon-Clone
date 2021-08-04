@@ -1,0 +1,24 @@
+
+
+.checkout__ad {
+    width: 100%; /* width of container */
+    height: 150px; /* height of container */
+    overflow: hidden;
+}
+
+.checkout img {
+    margin: 10px 5px;
+}
+
+.checkout__list{
+    display: flex;  
+    margin-bottom: 10px;
+}
+
+.checkout__top{
+    display: flex;
+}
+
+.checkout__right{
+    margin: 0 5px;
+}

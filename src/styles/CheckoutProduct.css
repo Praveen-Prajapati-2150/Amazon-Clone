@@ -1,0 +1,37 @@
+.checkoutProduct {
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    width: 100%;
+}
+
+.checkoutProduct > img{
+    max-height: 200px;
+    height: 100%;
+    width: 200px;
+    object-fit: contain;
+    margin-bottom: 1em;
+}
+
+.checkoutProduct__rating{
+    display: flex;
+}
+
+.checkoutProduct__info{
+    padding: 15px;
+    width: 100%;
+}
+
+.checkoutProduct__info Button{
+    margin-top: 9em;
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(255, 61, 61);
+}
+
+.checkoutProduct__title{
+    font-size: 18px;
+}
+
