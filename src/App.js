@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
@@ -7,7 +7,9 @@ import Login from "./components/Login";
 import "./styles/Login.css";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./components/Firebase";
-import {useEffect} from "react";
+import { useEffect } from "react";
+
+// hosting link https://clone-8b9b1.firebaseapp.com/
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -22,22 +24,22 @@ function App() {
 
         dispatch({
           type: "Set_User",
-          user: authUser
-        })
+          user: authUser,
+        });
       } else {
         // the user is logged out...
 
         dispatch({
           type: "Set_User",
-          user: null
-        })
+          user: null,
+        });
       }
-    })
+    });
 
     return () => {
       // Any cleanup operations go in here...
       unsubscribe();
-    }
+    };
   }, []);
 
   console.log("user in >>>>", user);
